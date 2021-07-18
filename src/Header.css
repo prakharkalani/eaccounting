@@ -1,0 +1,492 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: #fffefc;
+  box-sizing: border-box;
+}
+
+body {
+  color: #111111;
+  font-family: inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1000px) {
+  div.dropdown:hover div.dropdown-content {
+    display: block;
+    transition: ease-in 0.3s;
+  }
+}
+@media screen and (max-width: 999px) {
+  span.eaccounting {
+    font-size: 3.5vw;
+  }
+  ul.nav {
+    display: none;
+  }
+  img.image3 {
+    width: 75%;
+  }
+
+  div.header1 {
+    /* position: relative; */
+  }
+  div.main-page {
+    /* top: 20px; */
+  }
+
+  div.col {
+    width: 40%;
+  }
+  div.header1 header nav a.icon {
+    visibility: unset;
+  }
+
+  ul.nav {
+    float: unset;
+    /* display: flex; */
+    flex-direction: column;
+    margin: auto;
+    /* align-content: center; */
+    background: transparent;
+  }
+
+  button.dropbtn {
+    /* display: flex; */
+    /* justify-content: space-between; */
+  }
+  div.header1,
+  div.header1 header,
+  div.header1 header nav {
+    /* background: rgba(255, 255, 255, 0.693); */
+  }
+
+  div.dropdown {
+    display: block;
+    background: transparent;
+    overflow: auto;
+  }
+
+  div.dropdown-content {
+    position: relative;
+    box-shadow: unset;
+    padding: 0px;
+    margin: 0;
+    padding-left: 5vw;
+    display: none;
+  }
+
+  a.a1 {
+    /* padding: 3px; */
+    font: 80vw;
+  }
+
+  div.enquire {
+    display: none;
+  }
+}
+
+.dropdown {
+  display: inline-block;
+  background: none;
+  margin-right: 12px;
+  margin-left: 12px;
+}
+.dropdownBtn {
+  position: relative;
+  margin: 0;
+  top: 8px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  transition: 0.5s;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content div div a {
+  float: none;
+  color: black;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 18px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.flexcol {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+@media screen and (max-width: 500px) {
+  span.eaccounting {
+    font-size: 8vw;
+  }
+  img.image3 {
+    width: 85%;
+  }
+  div.below-big-heading {
+    font-size: 5vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+
+  div.col {
+    width: 80%;
+  }
+}
+/* ------------------------ */
+/* Reusable */
+/* ------------------------ */
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: "-";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/* ------------------------ */
+/* Header */
+/* ------------------------ */
+
+.header1 {
+  /* padding-top: 10px; */
+  display: inline-block;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  transition: 0.6s;
+  background-color: #fffefc;
+}
+
+.change-color {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.eaccounting {
+  font-weight: bold;
+  display: inline-block;
+  /* text-align: center; */
+  /* vertical-align: middle; */
+  cursor: pointer;
+  margin-left: 20px;
+  /* padding-left: 50px; */
+  /* padding-top: 1200px; */
+  font-size: 2.25vw;
+}
+
+.logo {
+  float: left;
+  margin: 20px;
+}
+
+.nav {
+  float: right;
+  margin-right: 10px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.a {
+  text-decoration: none;
+  color: #111111;
+  font-size: 18px;
+  font-weight: 400;
+  margin: auto;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 24px;
+  border: none;
+  display: inline-block;
+}
+
+.a1 {
+  text-decoration: none;
+  color: #111111;
+  font-size: 16px;
+  font-weight: 500;
+  margin: auto;
+  /* padding: 12px; */
+  border: none;
+  display: inline-block;
+}
+
+.a:hover,
+.a1:hover {
+  color: #e16259;
+  transition: 0.3s;
+}
+
+/* ------------------------ */
+/* Main Image */
+/* ------------------------ */
+
+.main-image {
+  /* height: 320px; */
+  text-align: center;
+  padding-top: 85px;
+}
+.image3 {
+  font-size: 90%;
+  text-align: center;
+  width: 45%;
+}
+
+/* ------------------------ */
+/* big heading below image */
+/* ------------------------ */
+
+.centre {
+  text-align: center;
+}
+.big-heading {
+  font-size: 8vw;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.below-big-heading {
+  color: rgba(0, 0, 0, 0.6);
+  padding-top: 20px;
+  font-size: 1.8vw;
+}
+.enquire {
+  padding-top: 30px;
+  font-family: inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 80%;
+}
+.enter-email {
+  border: 0.1px solid rgb(15 15 15 / 20%);
+  border-radius: 4px;
+  height: 30px;
+  margin-top: 1vw;
+}
+.btn {
+  background-color: #e16259;
+  border: 1px solid #be5643;
+  box-shadow: 0 1px 2px rgb(15 15 15 / 10%);
+  border: 0.1px solid rgb(15 15 15 / 20%);
+  border-radius: 4px;
+  height: 30px;
+  margin: auto;
+  margin-top: 2px;
+}
+
+h3 {
+  font-size: 20px;
+}
+.btn a {
+  color: #ffffff;
+}
+
+.EM:hover {
+  font-style: oblique;
+
+  transition: 1s;
+}
+.softwares-we-use {
+  margin-top: 100px;
+}
+.softwares-we-use:after,
+.about-us:after {
+  display: block;
+  height: 2px;
+  outline: none;
+  border: none;
+  padding: 0;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  box-sizing: content-box;
+  content: " ";
+  margin: 80px auto 0 auto;
+  overflow: hidden;
+}
+
+/* ------------------------ */
+/* Section About us */
+/* ------------------------ */
+
+.about-us {
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.about-heading {
+  color: #111111;
+  padding-top: 20px;
+  padding-bottom: 19px;
+  margin-top: 0px;
+  font-size: 6vw;
+  font-weight: 700;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+.about-kgc {
+  text-align: justify;
+  font-size: 18px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.how-do-we-work-heading {
+  color: rgba(0, 0, 0, 0.8);
+  padding-top: 30px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.steps {
+  color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  /* align-items: center; */
+  text-align: center;
+  /* vertical-align: auto; */
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1000px;
+
+  /* flex-direction: row; */
+}
+
+.steps div {
+  flex: 1;
+  width: 51%;
+}
+.steps h3 {
+  color: #111111;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* ------------------------ */
+/* software we use */
+/* ------------------------ */
+.software-use {
+  color: rgba(0, 0, 0, 0.7);
+  padding-top: 40px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.how-do-we-work-heading:after,
+.software-use:after {
+  display: block;
+  height: 2px;
+  outline: none;
+  border: none;
+  margin: 0 auto;
+  padding: 0;
+  border-top: 2px solid rgba(0, 0, 0, 0.5);
+  max-width: 300px;
+  box-sizing: content-box;
+  content: " ";
+  margin: 5px auto 0 auto;
+  overflow: hidden;
+}
+
+.img-size {
+  height: 140px;
+  display: flex;
+  margin: auto;
+}
+
+.logos-of-soft {
+  padding-top: 30px;
+  padding-right: 8%;
+  padding-left: 8%;
+  text-align: center;
+}
+
+.img {
+  height: 100px;
+}
+
+.img1 {
+  padding-right: 30px;
+}
+
+.steps {
+  width: 100%;
+  /* padding-left: 1%; */
+}
+.col {
+  display: inline-block;
+  width: 60%;
+  padding: 1.5%;
+  /* padding-right: 3%; */
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+
+  padding-top: 20px;
+  text-align: justify;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.col1 {
+  /* border-right: 2px solid rgba(0, 0, 0, 0.1); */
+}
+
+.col2 {
+  /* margin-top: 40px; */
+}
+
+.main-page {
+  position: relative;
+  /* top: 50px; */
+}
+
+.section-footer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+.footer div {
+  display: inline-block;
+  float: left;
+  margin: 0 25px 0 65px;
+}
+
+.links ul {
+  list-style: none;
+}
+.links h4 {
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.links ul div div div div a {
+  color: rgba(0, 0, 0);
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.header1 header nav a.icon {
+  /* background: black; */
+  color: black;
+  display: block;
+  position: absolute;
+  right: 3vw;
+  top: 4.2vw;
+  font-size: 120%;
+  visibility: hidden;
+}

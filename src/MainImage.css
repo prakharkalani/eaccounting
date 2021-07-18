@@ -38,6 +38,8 @@
         /* top: 20px; */
         
     }
+
+
   
     div.col {
       width: 40%;
@@ -91,7 +93,10 @@
   
   }
   
-  
+  .nilshow{
+    font-size: 0px;
+    visibility: hidden;
+} 
   
   .dropdown {
     display: inline-block;
@@ -245,7 +250,7 @@
   .image3 {
     font-size: 90%;
     text-align: center;
-    width: 45%;
+    width: 40%;
   }
   
   /* ------------------------ */
